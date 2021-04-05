@@ -665,6 +665,7 @@ body {
   padding-right: 0;
   margin-top: 0;
   margin-bottom: 0;
+
   flex-direction: column;
   list-style: none;
 }
@@ -715,7 +716,7 @@ body {
   color: var(--footer-address-color);
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
@@ -759,6 +760,49 @@ body {
   width: 20px;
   height: 20px;
   fill: var(--main-icon-hover-color);
+}
+
+.footer-section-mail-subscribe-form {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.footer-section-mail-subscribe-form-label {
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--footer-address-color);
+}
+
+.footer-section-mail-subscribe-input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.footer-section-mail-subscribe-button {
+  width: 200px;
+  height: 50px;
+  align-items: center;
+  text-align: center;
+  background-color: var(--main-button-color);
+  color: var(--main-button-text-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* Секция списка проектов */
