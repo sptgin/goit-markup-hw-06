@@ -301,9 +301,7 @@ body {
 
 .hero-section-modal {
   position: absolute;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
+  display: block;
   padding: 8px 8px 8px 8px;
   top: 50%;
   left: 50%;
@@ -338,6 +336,34 @@ body {
   height: 11px;
   fill: black;
   transition: 250ms fill cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-section-modal-label {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0 0 0 0;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+}
+
+.hero-section-modal-input-label {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-section-modal-input {
+  width: 448px;
+  height: 40px;
+}
+
+.hero-section-modal-comment-input {
+  width: 448px;
+  height: 120px;
 }
 
 /* Секция "Особенности" */
