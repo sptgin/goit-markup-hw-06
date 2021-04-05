@@ -617,7 +617,7 @@ body {
   border: 1px solid var(--main-clients-icons-color);
   box-sizing: border-box;
   border-radius: 4px;
-  transition: 250ms border cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms border-color cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-section-list-item:not(:last-child) {
   margin-right: 30px;
@@ -788,7 +788,6 @@ body {
   margin-right: 12px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background: var(--footer-background-color);
   font-weight: normal;
@@ -796,6 +795,8 @@ body {
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: var(--footer-text-color);
+  transition: 250ms border-color cubic-bezier(0.4, 0, 0.2, 1),
+    250ms filter cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-section-mail-subscribe-input:hover,
@@ -803,11 +804,13 @@ body {
 .footer-section-mail-subscribe-input:focus {
   border: 1px solid var(--main-button-color);
   border-radius: 4px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
 .footer-section-mail-subscribe-button {
   width: 200px;
   height: 50px;
+  padding: 0 0 0 0;
   align-items: center;
   text-align: center;
   background-color: var(--main-button-color);
@@ -820,12 +823,26 @@ body {
   border: none;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: 250ms filter cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-section-mail-subscribe-button:hover,
+.footer-section-mail-subscribe-button:active,
+.footer-section-mail-subscribe-button:focus {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.footer-section-mail-subscribe-button-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-subscribe-icons {
   width: 24px;
   height: 24px;
-  fill: red;
+  margin-left: 10px;
+  fill: var(--main-button-text-color);
 }
 
 /* Секция списка проектов */
