@@ -273,13 +273,12 @@ body {
   cursor: pointer;
   border: none;
   border-radius: 4px;
-  transition: 250ms color cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms background-color cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-section-button:hover,
 .hero-section-button:active,
 .hero-section-button:focus {
   background-color: var(--main-button-hover-color);
-  color: var(--main-button-text-color);
   border-radius: 0px;
 }
 
@@ -314,6 +313,14 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+
+.hero-section-modal-close-button {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 8px;
+  margin-bottom: 2px;
+  margin-right: 8px;
 }
 
 .hero-section-modal-button-close {
@@ -351,16 +358,33 @@ body {
   color: var(--body-default-header-color);
 }
 
+.hero-section-modal-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .hero-section-modal-input-group {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .hero-section-modal-input-label {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
+}
+.hero-section-modal-comment-label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0px;
+}
+
+.hero-section-modal-checkbox-label {
+  display: flex;
+  margin-bottom: 30px;
 }
 
 .hero-section-modal-label-text {
@@ -371,6 +395,17 @@ body {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
+  color: var(--body-default-text-color);
+}
+
+.hero-section-modal-checkbox-label-text {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0 0 0 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
   color: var(--body-default-text-color);
 }
 
@@ -390,6 +425,39 @@ body {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.hero-section-modal-checkbox-input {
+}
+
+.hero-section-modal-submit-button {
+  width: 200px;
+  height: 50px;
+  padding: 0 0 0 0;
+  align-items: center;
+  text-align: center;
+  background-color: var(--main-button-color);
+  color: var(--main-button-text-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: 250ms background-color cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-section-modal-submit-button:hover,
+.hero-section-modal-submit-button:active,
+.hero-section-modal-submit-button:focus {
+  background-color: var(--main-button-hover-color);
 }
 
 /* Секция "Особенности" */

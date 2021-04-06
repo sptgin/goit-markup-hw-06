@@ -88,15 +88,18 @@
       <!-- Окно "Заказать услугу"-->
       <div class="hero-section-modal-backdrop is-hidden" data-modal>
         <div class="hero-section-modal">
-          <button class="hero-section-modal-button-close" data-modal-close>
-            <svg class="modal-icons">
-              <use href="./images/icons.svg#icon-close-modal"></use>
-            </svg>
-          </button>
+          <div class="hero-section-modal-close-button">
+            <button class="hero-section-modal-button-close" data-modal-close>
+              <svg class="modal-icons">
+                <use href="./images/icons.svg#icon-close-modal"></use>
+              </svg>
+            </button>
+          </div>
+
           <p class="hero-section-modal-header">
             Оставьте свои данные, мы вам перезвоним
           </p>
-          <form action="">
+          <form class="hero-section-modal-form" action="">
             <div
               class="hero-section-modal-input-group"
               role="group"
@@ -126,7 +129,7 @@
                   name="order-email"
                 />
               </label>
-              <label class="hero-section-modal-input-label">
+              <label class="hero-section-modal-comment-label">
                 <p class="hero-section-modal-label-text">Комментарий</p>
                 <textarea
                   class="hero-section-modal-comment-input"
@@ -136,11 +139,23 @@
                 ></textarea>
               </label>
             </div>
-            <button type="submit">Отправить</button>
+            <label class="hero-section-modal-checkbox-label">
+              <input
+                class="hero-section-modal-checkbox-input"
+                type="checkbox"
+                name="order-get-license"
+                value=""
+              />
+              <p class="hero-section-modal-checkbox-label-text">
+                Соглашаюсь с рассылкой и принимаю Условия договора
+              </p>
+            </label>
+            <button class="hero-section-modal-submit-button" type="submit">
+              Отправить
+            </button>
           </form>
         </div>
       </div>
-
       <!-- Секция "Особенности" -->
       <section class="features-section">
         <div class="container">
