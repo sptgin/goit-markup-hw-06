@@ -372,13 +372,16 @@ body {
 }
 
 .hero-section-modal-input-label {
+  position: relative;
   display: flex;
   flex-direction: column;
+  cursor: pointer;
   margin-bottom: 10px;
 }
 .hero-section-modal-comment-label {
   display: flex;
   flex-direction: column;
+  cursor: pointer;
   margin-bottom: 0px;
 }
 
@@ -414,12 +417,21 @@ body {
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
+  cursor: pointer;
   border-radius: 4px;
-  background-image: url(/images/Vector.svg);
-  background-size: 18px;
-  background-position: 12px 11px;
-  background-repeat: no-repeat;
   padding: 11px 12px 11px 42px;
+  transition: 250ms border-color cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-section-modal-input-icons {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  margin-left: 12px;
+  fill: var(--body-default-header-color);
+  transition: translatey(-50%);
 }
 
 .hero-section-modal-comment-input {
@@ -429,12 +441,14 @@ body {
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
+  cursor: pointer;
   border-radius: 4px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+  transition: 250ms border-color cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-section-modal-checkbox-input {
@@ -463,6 +477,15 @@ body {
 .hero-section-modal-submit-button:active,
 .hero-section-modal-submit-button:focus {
   background-color: var(--main-button-hover-color);
+}
+
+.hero-section-modal-input:hover,
+.hero-section-modal-comment-input:hover {
+  border-color: var(--main-button-color);
+}
+
+.hero-section-modal-input-icons:hover {
+  fill: var(--main-button-hover-color);
 }
 
 /* Секция "Особенности" */
