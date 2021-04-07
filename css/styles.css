@@ -386,6 +386,7 @@ body {
 }
 
 .hero-section-modal-checkbox-label {
+  position: relative;
   display: flex;
   margin-bottom: 30px;
 }
@@ -405,6 +406,7 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   padding: 0 0 0 0;
+  margin-left: 25px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.71;
@@ -432,6 +434,17 @@ body {
   margin-left: 12px;
   fill: var(--body-default-header-color);
   transition: translatey(-50%);
+  transition: 250ms fill cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-section-modal-checkbox-icons {
+  position: absolute;
+  top: 12%;
+  left: 14px;
+  width: 16px;
+  height: 15px;
+  fill: var(--body-default-header-color);
+  transition: translatey(-50%);
 }
 
 .hero-section-modal-comment-input {
@@ -451,7 +464,15 @@ body {
   transition: 250ms border-color cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-section-modal-checkbox-input {
+..hero-section-modal-checkbox-input {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.hero-section-license-link {
+  color: var(--main-button-color);
 }
 
 .hero-section-modal-submit-button {
@@ -479,12 +500,16 @@ body {
   background-color: var(--main-button-hover-color);
 }
 
+.hero-section-modal-input:hover ~ .hero-section-modal-input-icons,
+.hero-section-modal-input:active ~ .hero-section-modal-input-icons,
+.hero-section-modal-input:focus ~ .hero-section-modal-input-icons,
 .hero-section-modal-input:hover,
-.hero-section-modal-comment-input:hover {
+.hero-section-modal-input:active,
+.hero-section-modal-input:focus,
+.hero-section-modal-comment-input:hover,
+.hero-section-modal-comment-input:active,
+.hero-section-modal-comment-input:focus {
   border-color: var(--main-button-color);
-}
-
-.hero-section-modal-input-icons:hover {
   fill: var(--main-button-hover-color);
 }
 
