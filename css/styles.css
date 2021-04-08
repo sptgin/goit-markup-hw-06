@@ -986,7 +986,7 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   border-radius: 4px;
-  outline-width: 0px;
+  outline: none;
   background: var(--footer-background-color);
   font-weight: normal;
   font-size: 16px;
