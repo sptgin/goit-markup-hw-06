@@ -347,6 +347,7 @@ body {
 }
 
 .hero-section-modal-header {
+  display: block;
   margin-top: 0;
   margin-bottom: 12px;
   padding: 0 0 0 0;
@@ -421,6 +422,7 @@ body {
   width: 448px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
+  outline: none;
   box-sizing: border-box;
   cursor: pointer;
   border-radius: 4px;
@@ -470,6 +472,7 @@ body {
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
+  outline: none;
   cursor: pointer;
   border-radius: 4px;
   font-weight: 500;
@@ -965,6 +968,7 @@ body {
 }
 
 .footer-section-mail-subscribe-form-label {
+  display: block;
   margin-top: 0;
   margin-bottom: 20px;
   padding-top: 0;
@@ -980,12 +984,12 @@ body {
 .footer-section-mail-subscribe-input {
   width: 358px;
   height: 50px;
-  padding-left: 16px;
   padding: 15px 16px 15px 16px;
   margin-right: 12px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   border-radius: 4px;
+  outline: none;
   background: var(--footer-background-color);
   font-weight: normal;
   font-size: 16px;
