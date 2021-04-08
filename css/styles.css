@@ -423,7 +423,7 @@ body {
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
-  outline: none;
+  outline-width: 0px;
   cursor: pointer;
   border-radius: 4px;
   padding: 11px 12px 11px 42px;
@@ -438,7 +438,6 @@ body {
   height: 18px;
   margin-left: 12px;
   fill: var(--body-default-header-color);
-  transition: translatey(-50%);
   transition: 250ms fill cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -449,7 +448,6 @@ body {
   width: 16px;
   height: 15px;
   fill: var(--body-default-header-color);
-  transition: translatey(-50%);
   transition: 250ms opacity cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -460,7 +458,6 @@ body {
   width: 16px;
   height: 15px;
   fill: var(--body-default-header-color);
-  transition: translatey(-50%);
   opacity: 0;
   transition: 250ms opacity cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -472,7 +469,7 @@ body {
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
-  outline: none;
+  outline-width: 0px;
   cursor: pointer;
   border-radius: 4px;
   font-weight: 500;
@@ -989,7 +986,7 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   border-radius: 4px;
-  outline: none;
+  outline-width: 0px;
   background: var(--footer-background-color);
   font-weight: normal;
   font-size: 16px;
