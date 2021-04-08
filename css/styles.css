@@ -388,6 +388,9 @@ body {
 .hero-section-modal-checkbox-label {
   position: relative;
   display: flex;
+  align-items: baseline;
+  justify-content: center;
+  width: 448px;
   margin-bottom: 30px;
 }
 
@@ -405,8 +408,8 @@ body {
 .hero-section-modal-checkbox-label-text {
   margin-top: 0;
   margin-bottom: 0;
+  margin-left: 7px;
   padding: 0 0 0 0;
-  margin-left: 25px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.71;
@@ -439,12 +442,25 @@ body {
 
 .hero-section-modal-checkbox-icons {
   position: absolute;
-  top: 12%;
-  left: 4px;
+  top: 18%;
+  left: 12px;
   width: 16px;
   height: 15px;
   fill: var(--body-default-header-color);
   transition: translatey(-50%);
+  transition: 250ms opacity cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-section-modal-checkbox-icons-checked {
+  position: absolute;
+  top: 18%;
+  left: 12px;
+  width: 16px;
+  height: 15px;
+  fill: var(--body-default-header-color);
+  transition: translatey(-50%);
+  opacity: 0;
+  transition: 250ms opacity cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-section-modal-comment-input {
@@ -465,10 +481,18 @@ body {
 }
 
 .hero-section-modal-checkbox-input {
-  position: absolute;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+  opacity: 0;
+  margin-right: 7px;
+}
+
+.hero-section-modal-checkbox-input:checked
+  ~ .hero-section-modal-checkbox-icons {
+  opacity: 0;
+}
+
+.hero-section-modal-checkbox-input:checked
+  ~ .hero-section-modal-checkbox-icons-checked {
+  opacity: 1;
 }
 
 .hero-section-license-link {
