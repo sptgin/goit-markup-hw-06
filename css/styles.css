@@ -911,7 +911,7 @@ body {
   padding-top: 0;
   padding-bottom: 0;
   color: var(--footer-address-color);
-  font-weight: 500;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -970,7 +970,7 @@ body {
   margin-bottom: 20px;
   padding-top: 0;
   padding-bottom: 0;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -988,7 +988,7 @@ body {
   border-radius: 4px;
   outline: none;
   background: var(--footer-background-color);
-  font-weight: normal;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
